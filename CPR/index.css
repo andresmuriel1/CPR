@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "birthday";
+    src: url("Begika.otf");
+}
+@font-face {
+    font-family: "birthday2";
+    src: url("inter.ttf");
+}
+
+@font-face {
+    font-family: "birthday3";
+    src: url("AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "onomatopeya";
+    src: url("Super-Squad.otf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: birthday;
+    letter-spacing: 2px;
+}
+
+body {
+    background-image: url("images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    text-align: center; 
+    text-shadow: 2px 2px black ;
+}
+
+#center {
+    position: absolute;
+    width: 376.15px;
+    height: 64px;
+    left: calc(50% - 376.15px/2 + 0.1px);
+    top: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 32px;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #FEE7B8;
+} 
+
+#titulo, #subtitulo {
+    display: block;
+    width: 480px;
+    height: 64px;
+    margin: 0; 
+    padding: 0; 
+}
+
+#titulo + #subtitulo {
+    margin-top: 10px; 
+}
+
+#fotos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    width: 100%;
+    flex-direction: row;
+}
+
+#fotosdos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    width: 100%;
+}
+
+#foto {
+    width: 250px; 
+    height: 250px;
+    border-radius: 15%;
+    transition: background-color 0.3s;
+    object-fit: cover; 
+    margin: 0 10px; 
+}
+
+#foto:hover {
+    border:solid #ccd5ae 5px;
+    
+}
+
+#bodyanimales {
+    flex-direction: column;
+    color: #FEE7B8 
+}
+
+#subs {
+    color: #FEE7B8
+}
+
+#subsjames, #subsbongo, #subscayetano, #subsapolo, #substato {
+    font-family: onomatopeya;
+}
+
+#titulolugares {
+    position: sticky;
+}
+
